@@ -7,7 +7,7 @@ class Obstacle {
       this.height = 50;
       this.element = document.createElement("img");
   
-      this.element.src = "./images/Obstaculo.png";
+      this.element.src = "./Imagenes/Obstaculo.png";
       this.element.style.position = "absolute";
       this.element.style.width = `${this.width}px`;
       this.element.style.height = `${this.height}px`;
@@ -30,3 +30,5 @@ class Obstacle {
       this.updatePosition();
     }
   }
+
+  

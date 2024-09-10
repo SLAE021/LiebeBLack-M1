@@ -1,67 +1,80 @@
 body {
-    padding: 0;
-    text-align: center;
-  }
+}
+
+
+
+#game-intro {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 20px 0px;
+  justify-content: center;
+
+  align-items: center;
+  background-image: url(/Imagenes/animefondoprueba2.jpg);
+  align-content: center;
+
+}
   
-  #game-intro {
-    padding: 20px 0px;
-  }
+#game-container {  
+  display: flex;
+  width: 100vw;
+  padding: 20px 0px;
+  justify-content: center;
+
+}
+
+#game-screen {
+  display: none;
+  align-content: center;
+  padding: 20px 0px;
+  overflow: hidden;
+  position: relative;
+  background-image: url(/Imagenes/castilloBlack.jpg);
+  background-size: cover;
+  /*animation: slide 5s linear infinite;*/
+}
+
+
+
+#game-end {
+  display: none;
+  flex-direction: column;
+  width: 500px;
+  padding: 20px 0px;
+  justify-content: center;
+
+  align-items: center;
+  background-image: url(/Imagenes/end-game.png);
+  align-content: center;
+
+}
+
+.game-intro p {
+  font-size: 18px;
+  font-family: "Verdana";
+ 
+}
+
+.logo-img {
+  width: 300px;
   
-  #game-container {
-    display: flex;
-    width: 100vw;
-    padding: 20px 0px;
-    justify-content: center;
-  }
-  
-  #game-screen {
-    display: none;
-    align-content: center;
-    padding: 20px 0px;
-    overflow: hidden;
-    position: relative;
-    background-image: url(../images/FondoNubes.png);
-    background-size: cover;
-    animation: slide 5s linear infinite;
-  }
-  
-  @keyframes slide {
-    0% {
-      background-position: 0 -1000px;
-    }
-    95% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 0 50px;
-    }
-  }
-  
-  #game-end {
-    display: none;
-  }
-  
-  .game-intro p {
-    font-size: 18px;
-    font-family: "Verdana";
-  }
-  
-  .logo-img {
-    width: 350px;
-  }
-  
-  .arrows-img {
-    width: 150px;
-  }
-  
-  body button {
-    font-size: 30px;
-    background-color: #870007;
-    color: #fff;
-    padding: 20px 40px;
-    border: 0;
-    box-shadow: 0;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
+}
+
+.arrows-img {
+  width: 20px;
+  height: 50PX;
+}
+
+body button {
+  font-size: 20px;
+  font-family: "roboto";
+  background-color: #260087;
+  color: #ffffff;
+  padding: 20px 50px;
+  border: 0;
+  box-shadow: 0;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+

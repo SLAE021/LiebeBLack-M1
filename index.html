@@ -3,39 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="/style.css" />
-    <title>Island Racer</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>LiebeBlack</title>
   </head>
+
   <body>
-    <main>
-      <!-- #game-intro is initially shown on the game start screen -->
+    <div id="game-container">
+      <!--#game-intro, pantalla de inicio-->
       <div id="game-intro">
         <img src="/Imagenes/PruebadeTitulo.png" alt="" class="logo-img" />
         <br />
+        <h1 style="color: white; font-size: 20px; font-family: roboto">
+          INSTRUCCIONES:
+        </h1>
+        <p style="color: white; font-size: 10; font-family: roboto">
+          EL objetivo principal del juego es esquiuvar los
+        </p>
+        <p style="color: white">
+          objetos que van cayendo utilizando las teclas A,W,S,D para moverse
+        </p>
+        <br />
         <button id="start-button">Start Game</button>
-        <p>Use the left and right arrow to control the car!</p>
-        
-      </div>
 
-      <div id="game-container">
-        <!-- #game-screen is initially hidden using CSS style display: none -->
-        <div id="game-screen"></div>
+        <br />
+        <!-- <img src="/Imagenes/arrows.png" alt="" class="arrow-img"; height="100px"; width="00px"/> -->
       </div>
+      <!--#game-screen, esta sera la pantalla del juego-->
 
-      <!-- #game-end is initially hidden using CSS style display: none -->
+      <div id="game-screen"></div>
+
+      <!-- #game-end esta sera la pantalla final del juego-->
+
       <div id="game-end">
-        <img src="/Imagenes/Captura de pantalla 2024-09-10 170112.png" alt="" class="logo-img" />
-        <h1>Game Over</h1>
+        <img src="/Imagenes/PruebadeTitulo.png" alt="" class="logo-img" />
+        <h2>Game Over</h2>
         <br />
         <button id="restart-button">Restart</button>
       </div>
-    </main>
+    </div>
 
-    <script src="/Js/game.js"></script>
-    <script src="/Js/obstacle.js"></script>
-    <script src="/Js/player.js"></script>
-    <script src="/Js/script.js"></script>
-    
+    <script src="Js/script.js"></script>
+    <script src="Js/player.js"></script>
+    <script src="Js/Obstaculos.js"></script>
+    <script src="Js/game.js"></script>
   </body>
 </html>
