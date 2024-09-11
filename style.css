@@ -1,8 +1,6 @@
 body {
 }
 
-
-
 #game-intro {
   display: flex;
   flex-direction: column;
@@ -11,17 +9,15 @@ body {
   justify-content: center;
 
   align-items: center;
-  background-image: url(/Imagenes/animefondoprueba2.jpg);
+  background-image: url(./Imagenes/animefondoprueba2.jpg);
   align-content: center;
-
 }
-  
-#game-container {  
+
+#game-container {
   display: flex;
   width: 100vw;
   padding: 20px 0px;
   justify-content: center;
-
 }
 
 #game-screen {
@@ -35,8 +31,6 @@ body {
   /*animation: slide 5s linear infinite;*/
 }
 
-
-
 #game-end {
   display: none;
   flex-direction: column;
@@ -47,23 +41,20 @@ body {
   align-items: center;
   background-image: url(./Imagenes/end-game.png);
   align-content: center;
-
 }
 
 .game-intro p {
   font-size: 18px;
   font-family: "Verdana";
- 
 }
 
 .logo-img {
   width: 300px;
-  
 }
 
 .arrows-img {
   width: 20px;
-  height: 50PX;
+  height: 50px;
 }
 
 body button {
@@ -77,4 +68,3 @@ body button {
   border-radius: 50px;
   margin-bottom: 20px;
 }
-
