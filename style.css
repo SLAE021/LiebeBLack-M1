@@ -30,7 +30,7 @@ body {
   padding: 20px 0px;
   overflow: hidden;
   position: relative;
-  background-image: url(/Imagenes/castilloBlack.jpg);
+  background-image: url(./Imagenes/castilloBlack.jpg);
   background-size: cover;
   /*animation: slide 5s linear infinite;*/
 }
@@ -45,7 +45,7 @@ body {
   justify-content: center;
 
   align-items: center;
-  background-image: url(/Imagenes/end-game.png);
+  background-image: url(./Imagenes/end-game.png);
   align-content: center;
 
 }
