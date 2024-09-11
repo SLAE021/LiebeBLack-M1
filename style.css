@@ -49,12 +49,15 @@
 }*/
 
 .logo-img {
+  width: 400px;
+}
+
+.logo-img2 {
   width: 300px;
 }
 
-
 body button {
-  font-size: 40px;
+  font-size: 30px;
   font-family: "roboto";
   text-align: center;
   background-color: #260087;
