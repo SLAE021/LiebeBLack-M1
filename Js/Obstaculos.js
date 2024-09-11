@@ -25,7 +25,7 @@ class Obstacle {
   
     move() {
       // Move the obstacle down by 3px
-      this.top += 3;
+      this.top += 4;
       // Update the obstacle's position on the screen
       this.updatePosition();
     }

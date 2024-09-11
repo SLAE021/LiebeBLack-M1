@@ -1,9 +1,8 @@
-body {
-}
 
 #game-intro {
   display: flex;
   flex-direction: column;
+  height: 600px;
   width: 500px;
   padding: 20px 0px;
   justify-content: center;
@@ -34,37 +33,35 @@ body {
 #game-end {
   display: none;
   flex-direction: column;
+  height: 600px;
   width: 500px;
   padding: 20px 0px;
-  justify-content: center;
+  justify-content: space-around;
 
   align-items: center;
   background-image: url(./Imagenes/end-game.png);
   align-content: center;
 }
 
-.game-intro p {
+/*.game-intro p {
   font-size: 18px;
   font-family: "Verdana";
-}
+}*/
 
 .logo-img {
   width: 300px;
 }
 
-.arrows-img {
-  width: 20px;
-  height: 50px;
-}
 
 body button {
-  font-size: 20px;
+  font-size: 40px;
   font-family: "roboto";
+  text-align: center;
   background-color: #260087;
   color: #ffffff;
   padding: 20px 50px;
-  border: 0;
-  box-shadow: 0;
+  border: 10;
+  box-shadow: 10;
   border-radius: 50px;
   margin-bottom: 20px;
 }
