@@ -44,15 +44,15 @@ window.onload = function () {
         case "a":
           game.player.directionX = -2;
           break;
-        case "w":
-          game.player.directionY = -2;
-          break;
+       // case "w":
+         // game.player.directionY = -2;
+         // break;
         case "d":
           game.player.directionX = 2;
           break;
-        case "s":
-          game.player.directionY = 2;
-          break;
+        //case "s":
+         // game.player.directionY = 2;
+         // break;
       }
     }
   }
