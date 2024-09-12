@@ -1,17 +1,33 @@
-
-#game-intro {
+#intro-screen {
   display: flex;
   flex-direction: column;
-  height: 600px;
-  width: 500px;
+  height: 700px;
+  width: 600px;
   padding: 20px 0px;
   justify-content: center;
-
   align-items: center;
-  background-image: url(./Imagenes/animefondoprueba2.jpg);
+  background-image: url("./Imagenes/animefondoprueba2.jpg");
   align-content: center;
 }
 
+#game-info {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1;
+}
+#score-display,
+#alives-display {
+  font-family: "roboto";
+  color: white;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.451);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
 #game-container {
   display: flex;
   width: 100vw;
@@ -21,50 +37,74 @@
 
 #game-screen {
   display: none;
-  align-content: center;
-  padding: 20px 0px;
-  overflow: hidden;
-  position: relative;
-  background-image: url(./Imagenes/castilloBlack.jpg);
+  width: 600px;
+  height: 700px;
+  margin: 0px;
+  background-image: url("/Imagenes/fondoBosque.png");
   background-size: cover;
-  /*animation: slide 5s linear infinite;*/
+  position: relative;
+}
+
+#game-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 #game-end {
   display: none;
   flex-direction: column;
-  height: 600px;
-  width: 500px;
+  height: 700px;
+  width: 600px;
   padding: 20px 0px;
   justify-content: space-around;
-
-  align-items: center;
-  background-image: url(./Imagenes/end-game.png);
-  align-content: center;
+  background-image: url("/Imagenes/end-game.png");
 }
 
-/*.game-intro p {
-  font-size: 18px;
-  font-family: "Verdana";
-}*/
+.coin,
+.object {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
 
+.player {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+}
 .logo-img {
-  width: 400px;
+  top: 500px;
+  width: 600px;
 }
 
 .logo-img2 {
-  width: 300px;
+  width: 200px;
+}
+.player {
+  background-image: url("/Imagenes/LiebeTiny.png");
 }
 
-body button {
+.coin {
+  background-image: url("/Imagenes/OrbeBLanco.png");
+}
+
+.object {
+  background-image: url("/Imagenes/obstaculo.png");
+}
+
+button {
   font-size: 30px;
   font-family: "roboto";
   text-align: center;
-  background-color: #260087;
+  background-color: #430542db;
   color: #ffffff;
-  padding: 20px 50px;
+  padding: 10px 20px;
   border: 10;
   box-shadow: 10;
   border-radius: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }

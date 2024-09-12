@@ -3,60 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>LiebeBlack</title>
+    <title>LiebeBLack</title>
+    <link rel="stylesheet" href="/style.css" />
   </head>
-
   <body>
     <div id="game-container">
-      <!--#game-intro, pantalla de inicio-->
-      <div id="game-intro">
-        <img src="./Imagenes/NatLogo1.png" alt="" class="logo-img" />
+      <div id="intro-screen">
+        <img src="/Imagenes/NatLogo1.png" alt="" class="logo-img" />
+        <br />
         <br />
         <h1 style="color: white; font-size: 20px; font-family: roboto">
-          INSTRUCCIONES:
+          Instrucciones:
         </h1>
         <p
           style="
             color: white;
-            font-size: 10;
+            font-size: 18px;
             font-family: roboto;
             text-align: center;
           "
         >
-          EL objetivo del juego es esquivar la mayor cantidad de <br />
-          bloques que van cayendo utilizando las teclas= A (Izquierda) , D(Derecha) para el movimiento.
+          EL objetivo del juego es esquivar los bloques y coger <br />
+          los Orbes azules que van cayendo utilizando las flechas de direccion
+          <br /><img src="/Imagenes/flechas.png" width="100px" />
         </p>
-
-        <br />
-        <button id="start-button">Start Game</button>
-
-        <br />
+        <button id="start-btn">Start Game</button>
       </div>
-      <!--#game-screen, esta sera la pantalla del juego-->
-
-      <div id="game-screen"></div>
-
-      <!-- #game-end esta sera la pantalla final del juego-->
-
+      <div id="game-screen">
+        <div id="game-info">
+          <p id="score-display" style="color: white; font-size: 20px">
+            Score: 0
+          </p>
+          <p id="lives-display" style="color: white; font-size: 20px">
+            Lives: 3
+          </p>
+        </div>
+        <div id="game-box"></div>
+      </div>
       <div id="game-end">
-        <img src="./Imagenes/NatLogo1.png" alt="" class="logo-img" />
-        <p style="color: white; font-size: 2; text-align: center">
-          Agradecimiento del Logo a Nat!
+        <img src="/Imagenes/NatLogo1.png" alt="" class="logo-img" />
+        <p style="color: white; font-size: 16px; text-align: center">
+          Supera tus limites e intentalo de nuevo¡¡
         </p>
-        <br />
-        <img src="./Imagenes/GameOver.png" alt="" class="logo-img2" />
-
-        <br />
-        <button id="restart-button">Restart</button>
+        <img src="/Imagenes/GameOver.png" alt="" class="logo-img2" />
+        <p id="final-score" style="color: white"></p>
+        <button id="restart-btn">Reiniciar</button>
       </div>
     </div>
-
-    <script src="./Js/script.js"></script>
-    <script src="./Js/player.js"></script>
-    <script src="./Js/Obstaculos.js"></script>
-    <script src="./Js/game.js"></script>
-    <script src="./Js/coin.js"></script>
-
+    <script src="/js/script.js"></script>
   </body>
 </html>
