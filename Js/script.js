@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const scoreDisplayNode = document.querySelector("#score-display");
   const livesDisplayNode = document.querySelector("#lives-display");
 
+
   let playerObj = null;
   let coinsArray = [];
   let objectsArray = [];
@@ -106,6 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function restartGame() {
+    
     gameEndScreenNode.style.display = "none";
     gameScreenNode.style.display = "flex";
     scoreDisplayNode.innerText = `Score: ${score}`;
@@ -115,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
     speed = 3;
     coinsCollected = 0;
 
-    
+    startGame()
   }
 
   startBtnNode.addEventListener("click", startGame);
