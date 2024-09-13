@@ -85,8 +85,11 @@
 }
 
 .logo-img2 {
-  width: 200px;
-  margin-bottom: 20px;
+  top: 300px;
+  left: 1000px;
+  width: 300px;
+  
+ 
 }
 .player {
   background-image: url("./Imagenes/LiebeTiny.png");
