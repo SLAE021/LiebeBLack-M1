@@ -40,7 +40,7 @@
   width: 600px;
   height: 700px;
   margin: 0px;
-  background-image: url("/Imagenes/fondoBosque.png");
+  background-image: url("./Imagenes/fondoBosque.png");
   background-size: cover;
   position: relative;
 }
@@ -60,7 +60,7 @@
   width: 600px;
   padding: 20px 0px;
   justify-content: space-around;
-  background-image: url("/Imagenes/end-game.png");
+  background-image: url("./Imagenes/end-game.png");
 }
 
 .coin,
@@ -86,15 +86,15 @@
   width: 200px;
 }
 .player {
-  background-image: url("/Imagenes/LiebeTiny.png");
+  background-image: url("./Imagenes/LiebeTiny.png");
 }
 
 .coin {
-  background-image: url("/Imagenes/OrbeBLanco.png");
+  background-image: url("./Imagenes/OrbeBLanco.png");
 }
 
 .object {
-  background-image: url("/Imagenes/obstaculo.png");
+  background-image: url("./Imagenes/Obstaculo.png");
 }
 
 button {

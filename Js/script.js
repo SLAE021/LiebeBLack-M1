@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
     speed = 3;
     coinsCollected = 0;
 
-    startGame();
+    
   }
 
   startBtnNode.addEventListener("click", startGame);
